@@ -43,8 +43,9 @@ int main() {
 	int i, j;
 	int a, b;
 	int d = 0x1234;
+	int g = -1;
 	int q = 0xffffffff;
-	
+	printf("%x\n", g);
 	printf("%d\n", q);
 	
 	char z = '\x12345678';
