@@ -648,6 +648,7 @@ void quixey::import_code(std::string name) {
 			continue;
 			
 		}
+
 		
 		source.insert(source.end(), line.begin(), line.end());
 		source.push_back('\n');
@@ -2382,7 +2383,7 @@ void quixey::atom(variable &value) {
 
 	case token::INTEGER:
 		// is a numeric constant
-		partial_value = variable(static_cast<int>(stol(token_string, nullptr, 0)));
+		partial_value = variable(static_cast<int>(stoul(token_string, nullptr, 0)));
 		break;
 
 	case token::CHARACTER:
